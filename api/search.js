@@ -13,14 +13,14 @@ module.exports = async (req, res) => {
                     userAgent.includes('Edge');
 
   // If someone tries to access API directly from browser without coming from our website
-  if (isBrowser && !referer.includes('https://numspy.vercel.app')) {
+  if (isBrowser && !referer.includes('https://rdx-hacker.vercel.app')) {
     
     // HTML page with redirect message
     const redirectHTML = `
     <!DOCTYPE html>
     <html>
     <head>
-      <title>🚫 Access Blocked - Happy Info Tool</title>
+      <title>🚫 Access Blocked - 𓆩𝗥𝗗𝗫 𝗛𝗔𝗖𝗞𝗘𝗥𓆪 Info Tool</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <style>
         body {
@@ -75,7 +75,7 @@ module.exports = async (req, res) => {
         <p class="link blink">https://numspy.vercel.app</p>
         <p>Redirecting in <span id="countdown" class="countdown">5</span> seconds...</p>
         <p style="margin-top: 30px; font-size: 14px; color: #bff;">
-          Developed by Happy 😊 | Contact: @Royal_smart_boy
+          Developed by 𓆩𝗥𝗗𝗫 𝗛𝗔𝗖𝗞𝗘𝗥𓆪 | Contact: @Rdx_Hacker_99
         </p>
       </div>
       
@@ -95,7 +95,7 @@ module.exports = async (req, res) => {
         
         // Auto redirect after 5 seconds
         setTimeout(() => {
-          window.location.href = 'https://numspy.vercel.app';
+          window.location.href = 'https://rdx-hacker.vercel.app';
         }, 5000);
       </script>
     </body>
@@ -161,8 +161,8 @@ module.exports = async (req, res) => {
         data: uniqueRecords,
         count: uniqueRecords.length,
         message: `Found ${uniqueRecords.length} record(s) for this number`,
-        developer: 'Happy 😊',
-        contact: '@Royal_smart_boy',
+        developer: '𓆩𝗥𝗗𝗫 𝗛𝗔𝗖𝗞𝗘𝗥𓆪🧑‍💻',
+        contact: '@Rdx_Hacker_99',
         privacy_notice: 'Protect your privacy at: https://otpal.vercel.app'
       });
       
@@ -171,7 +171,7 @@ module.exports = async (req, res) => {
         success: false,
         message: 'No data found for this phone number',
         data: [],
-        developer: 'Happy 😊'
+        developer: '𓆩𝗥𝗗𝗫 𝗛𝗔𝗖𝗞𝗘𝗥𓆪🧑‍💻'
       });
     }
     
@@ -180,7 +180,7 @@ module.exports = async (req, res) => {
     res.status(500).json({
       success: false,
       message: 'Internal server error',
-      developer: 'Happy 😊'
+      developer: '𓆩𝗥𝗗𝗫 𝗛𝗔𝗖𝗞𝗘𝗥𓆪🧑‍💻'
     });
   }
 };
