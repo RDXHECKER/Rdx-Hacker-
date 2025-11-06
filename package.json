@@ -1,0 +1,16 @@
+{
+  "name": "𓆩𝗥𝗗𝗫 𝗛𝗔𝗖𝗞𝗘𝗥𓆪-info-tool",
+  "version": "1.0.0",
+  "description": "Phone Number Information Tool by Happy",
+  "scripts": {
+    "dev": "vercel dev"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.7"
+  },
+  "devDependencies": {
+    "@vercel/node": "^2.0.0"
+  },
+  "author": "𓆩𝗥𝗗𝗫 𝗛𝗔𝗖𝗞𝗘𝗥𓆪 - @Rdx_Hacker_99",
+  "license": "MIT"
+}
